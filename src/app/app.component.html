@@ -4,7 +4,7 @@
 
   <ul id="users">
     <li *ngFor="let user of users">
-      <app-user [user]="user" (selectUser)="onSelectUser($event)"></app-user>
+      <app-user [user]="user" (selectUser)="onSelectUser($event)" [selected]="user.id===selectedUserId"></app-user>
     </li>
   </ul>
   @if (selectedUser) {<app-tasks [name]="selectedUser.name" [id]="selectedUser.id"/>}

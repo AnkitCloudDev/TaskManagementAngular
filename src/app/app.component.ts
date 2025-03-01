@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from './component/header/header.component';
-import { UserComponent } from './user/user.component';
-import { DUMMY_USERS } from './user/dummy-users';
+
 import { NgForOf } from '@angular/common';
-import { TasksComponent } from './tasks/tasks.component';
+import { UserComponent } from './component/user/user.component';
+import { TasksComponent } from './component/tasks/tasks.component';
+import { DUMMY_USERS } from './component/user/dummy-users';
 @Component({
   selector: 'app-root',
   standalone: true,
